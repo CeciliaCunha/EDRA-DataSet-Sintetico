@@ -9,18 +9,29 @@ O objetivo deste repositório é centralizar:
 - Scripts de apoio para conversão de anotações, organização de dados e preparação para treino de modelos.
 - Notebooks para treinamento e validação utilizando o YOLOv11 no Google Colab.
 
-## 🔗 Branches
+## Estrutura do repositório
 
-- `main` — Versão estável do projeto, com dataset e scripts validados.
-- `dev` — Desenvolvimento de scripts, testes e melhorias.
-- `annotations` — Branch focada nas anotações do dataset (geração e ajustes).
+- `dataset/` — Imagens organizadas para treino, validação e teste.  
+- `annotations/` — Anotações feitas com AnyLabeling.  
+- `scripts/` — Scripts validados para conversão, pré-processamento e treino.  
+- `notebooks/` — Notebooks para treinamento e validação, como no Google Colab.
 
-## 📦 Dataset
+## Branches
 
-As imagens estão organizadas na pasta `dataset/images`. As anotações são feitas utilizando o **AnyLabeling**, com suporte à segmentação automática.
+- `main` — Versão estável com dataset e scripts validados.  
+- `dev` — Desenvolvimento e testes de scripts.  
+- `annotations` — Foco nas anotações do dataset.
 
-## 🏗️ Como colaborar
+## Link para o Colab
 
-1. Crie uma branch a partir da `dev` ou `annotations`:
-   ```bash
-   git checkout -b nome-da-sua-branch
+👉 [Google Colab - Treinamento do modelo para Raspberry Pi 5](https://colab.research.google.com/drive/1KxAICycvb0RySuOXY7-nr1obotJ2oebA?usp=sharing)
+
+---
+
+## Como usar
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu_usuario/EDRA-DataSet-Sintetico.git
+cd EDRA-DataSet-Sintetico
