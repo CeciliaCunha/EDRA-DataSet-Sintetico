@@ -1,26 +1,40 @@
-# EDRA-DataSet-Sintetico
+# EDRA-DataSet-Sintetico - Branch Annotations
 
-## 🚀 Objetivo
+🗂️ **Branch dedicada às anotações do dataset**
 
-O objetivo deste repositório é centralizar:
+Esta branch é destinada exclusivamente às imagens base utilizadas para anotação e aos arquivos de anotações gerados com o software **AnyLabeling**, no formato JSON.
 
-- O dataset sintético gerado para simular as condições das missões da SAE AeroDesign.
-- As anotações feitas com o software [AnyLabeling](https://github.com/ozendelait/AnyLabeling).
-- Scripts de apoio para conversão de anotações, organização de dados e preparação para treino de modelos.
-- Notebooks para treinamento e validação utilizando o YOLOv11 no Google Colab.
+## 📂 Estrutura da branch
 
-## 🔗 Branches
+- `annotations/anylabeling/`
+  - `images/` — Imagens base utilizadas para anotar (ex.: bases de pouso, linhas de navegação, obstáculos, etc.).
+  - `labels/` — Arquivos JSON gerados pelo AnyLabeling, contendo as anotações de cada imagem.
 
-- `main` — Versão estável do projeto, com dataset e scripts validados.
-- `dev` — Desenvolvimento de scripts, testes e melhorias.
-- `annotations` — Branch focada nas anotações do dataset (geração e ajustes).
+## 🏗️ Como foram feitas as anotações
 
-## 📦 Dataset
+- As anotações foram realizadas com o software **[AnyLabeling](https://github.com/lllyasviel/AnyLabeling)**, utilizando a ferramenta de **segmentação automática** para acelerar o processo.
+- Cada arquivo JSON corresponde a uma imagem e contém informações de segmentação, bounding boxes ou classes, dependendo da configuração utilizada.
 
-As imagens estão organizadas na pasta `dataset/images`. As anotações são feitas utilizando o **AnyLabeling**, com suporte à segmentação automática.
+## 🔀 Conversão para outros formatos
+
+> ⚠️ As anotações aqui estão no formato nativo do AnyLabeling (JSON).  
+Para utilizar em frameworks como YOLO, COCO ou Pascal VOC, utilize os scripts disponíveis na branch `dev`.
+
+## 🚀 Status
+
+✔️ Anotações concluídas em andamento. Novas imagens e labels podem ser adicionados conforme necessidade.
+
+## 🔗 Link útil
+
+👉 [Google Colab - Treinamento do modelo](https://colab.research.google.com/drive/1KxAICycvb0RySuOXY7-nr1obotJ2oebA?usp=sharing)
+
+*(O treinamento dos modelos utiliza as anotações presentes nesta branch.)*
 
 ## 🏗️ Como colaborar
 
-1. Crie uma branch a partir da `dev` ou `annotations`:
-   ```bash
-   git checkout -b nome-da-sua-branch
+1. Crie sua branch a partir da `annotations`:
+
+```bash
+git checkout annotations
+git pull
+git checkout -b nome-da-sua-branch
