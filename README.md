@@ -11,8 +11,7 @@ O objetivo deste repositório é centralizar:
 
 ## Estrutura do repositório
 
-- `dataset/` — Imagens organizadas para treino, validação e teste.  
-- `annotations/` — Anotações feitas com AnyLabeling.  
+- `dataset/` — Imagens organizadas para treino, validação e teste.
 - `scripts/` — Scripts validados para conversão, pré-processamento e treino.  
 - `notebooks/` — Notebooks para treinamento e validação, como no Google Colab.
 
