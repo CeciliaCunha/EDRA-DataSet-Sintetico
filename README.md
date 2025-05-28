@@ -8,15 +8,26 @@ Esta branch é destinada exclusivamente às imagens base utilizadas para anotaç
 
 ```
 Imagens_Labels
-├── Linha
-│   ├── Imagens     → Imagens base da classe Linha
-│   └── Label       → Labels JSON gerados pelo AnyLabeling
-├── Mangueira
-│   ├── Imagens     → Imagens base da classe Mangueira
-│   └── Label       → Labels JSON gerados pelo AnyLabeling
-└── Postes
-    ├── Imagens     → Imagens base da classe Postes
-    └── Label       → Labels JSON gerados pelo AnyLabeling
+├───Bases
+│   ├───Imagens
+│   │       .gitkeep
+│   └───Label
+│           .gitkeep
+├───Linha
+│   ├───Imagens
+│   │       .gitkeep
+│   └───Label
+│           .gitkeep
+├───Mangueira
+│   ├───Imagens
+│   │       .gitkeep
+│   └───Label
+│           .gitkeep
+└───Postes
+    ├───Imagens
+    │       .gitkeep
+    └───Label
+            .gitkeep
 ```
 
 ## 🏗️ Como foram feitas as anotações
