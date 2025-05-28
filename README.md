@@ -6,9 +6,18 @@ Esta branch é destinada exclusivamente às imagens base utilizadas para anotaç
 
 ## 📂 Estrutura da branch
 
-- `annotations/anylabeling/`
-  - `images/` — Imagens base utilizadas para anotar (ex.: bases de pouso, linhas de navegação, obstáculos, etc.).
-  - `labels/` — Arquivos JSON gerados pelo AnyLabeling, contendo as anotações de cada imagem.
+```
+Imagens_Labels
+├── Linha
+│   ├── Imagens     → Imagens base da classe Linha
+│   └── Label       → Labels JSON gerados pelo AnyLabeling
+├── Mangueira
+│   ├── Imagens     → Imagens base da classe Mangueira
+│   └── Label       → Labels JSON gerados pelo AnyLabeling
+└── Postes
+    ├── Imagens     → Imagens base da classe Postes
+    └── Label       → Labels JSON gerados pelo AnyLabeling
+```
 
 ## 🏗️ Como foram feitas as anotações
 
