@@ -10,24 +10,16 @@ Esta branch é destinada exclusivamente às imagens base utilizadas para anotaç
 Imagens_Labels
 ├───Bases
 │   ├───Imagens
-│   │       .gitkeep
 │   └───Label
-│           .gitkeep
 ├───Linha
 │   ├───Imagens
-│   │       .gitkeep
 │   └───Label
-│           .gitkeep
 ├───Mangueira
 │   ├───Imagens
-│   │       .gitkeep
 │   └───Label
-│           .gitkeep
 └───Postes
     ├───Imagens
-    │       .gitkeep
     └───Label
-            .gitkeep
 ```
 
 ## 🏗️ Como foram feitas as anotações
